@@ -1,0 +1,20 @@
+button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  background: #e0a040;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+button:hover:not(:disabled) {
+  background: #d08f30;
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
