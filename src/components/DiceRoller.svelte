@@ -17,7 +17,7 @@ function confirmarResultado() {
 
 function iniciarNuevoTurno() {
   diceStore.update(state => ({
-    active: ["?", "?", "?", "?", "?", "?"],
+    active: ["?", "?", "?", "?", "?", "?"], 
     saved: [],
     rollsLeft: 3,
     turnoFinalizado: false
