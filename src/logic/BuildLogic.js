@@ -3,7 +3,7 @@ export const BuildLogic = {
     road: { madera: 1, ladrillo: 1 },
     house: { madera: 1, ladrillo: 1, oveja: 1, trigo: 1 },
     castle: { piedra: 3, trigo: 2 },
-    knight: { oveja: 1, piedra: 1 }
+    knight: { oveja: 1, piedra: 1, trigo: 1}
   },
 
   puedeConstruir(materiales, tipo) {
@@ -20,9 +20,7 @@ construir(materiales, tipo) {
   for (const recurso in costo) {
     nuevos[recurso] -= costo[recurso];
   }
-  
-  console.log("Costos:", costo);
-  console.log("Materiales:", materiales);
+
     return nuevos;
   }
   

@@ -1,32 +1,36 @@
 <script>
   export let size = 60;
   export let style = "";
+  export let color = "white";
+  export let onClick = () => {};
 </script>
 
 <svg 
   width={size} 
   height={size} 
   viewBox="0 0 145 306" 
-  stroke = "currentColor" 
-  style = {style}
+  stroke = "black" 
+  fill="currentColor"
+  style = "color: {color}; {style}"
   xmlns="http://www.w3.org/2000/svg"
+  on:click={onClick}
 >
   <!-- Pega aquí TODO tu SVG de madera -->
   
   <path d="M65.927 73.9792C48.7235 76.3619 7.5 83.361 7.5 123.121C7.5 157.082 45.9644 171.37 62.5187 173.604L35.7397 166.009C32.9807 172.561 21.912 189.687 7.5 198.621C31.3577 214.258 66.0243 258.575 70.309 303.607V239.275C67.063 239.275 64.4663 235.701 64.4663 230.34C64.4663 222.835 69.9844 221.554 73.2303 221.852C76.4763 221.554 83.1629 221.405 83.9419 230.34C84.721 239.275 79.5599 239.424 77.1255 239.275L76.1517 304.5C85.7272 276.057 106.339 212.917 137.5 198.621C128.411 195.494 111.013 183.164 106.339 166.009L97.088 170.03C113.155 165.86 125.328 156.555 125.328 127.142C125.328 102.571 120.459 84.7012 77.1255 73.0857V58.3431C76.6386 54.9181 79.6573 48.7828 85.8895 48.068C92.1217 47.3532 91.8945 60.5769 91.7322 64.5976C91.083 70.5542 98.0618 75.643 109.747 73.9792C132.339 70.7627 127.924 50.1528 127.275 43.1538C119.323 45.8343 108.287 51.9101 106.339 36.8994C105.643 31.5385 106.573 27.071 106.339 21.7101C106.027 14.5621 109.747 2.5 82.9682 2.5C57.7368 2.5 66.2516 27.8156 65.927 36.8994V73.9792Z" 
-    fill="white"
-    stroke="currentColor" stroke-width="5"/>
+    fill="currentColor"
+    stroke="black" stroke-width="5"/>
   <path d="M69.269 106.248L2.5 117.879V136.023C14.0343 141.916 46.2653 160.68 69.269 160.68C92.2726 160.68 118.655 141.916 130.677 136.023V117.879L69.269 106.248Z" 
     fill="white" 
-    stroke="currentColor" stroke-width="5"/>
+    stroke="black" stroke-width="5"/>
   <path d="M68.7816 109.039V159.285" 
-    stroke="currentColor" stroke-width="5"/>
+    stroke="black" stroke-width="5"/>
   <line x1="22.0577" y1="122.066" x2="22.0577" y2="135.092" 
-    stroke="currentColor" stroke-width="5"/>
+    stroke="black" stroke-width="5"/>
   <path d="M89.2509 118.344V139.745" 
-    stroke="currentColor" stroke-width="5"/>
+    stroke="black" stroke-width="5"/>
   <path d="M48.3123 117.413V128.579V139.745M113.619 122.066V135.092" 
-    stroke="currentColor" stroke-width="5"/>
+    stroke="black" stroke-width="5"/>
   
 </svg>
 

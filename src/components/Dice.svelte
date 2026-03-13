@@ -31,22 +31,21 @@
 
 <style>
 .die {
-  width: 70px;
-  height: 70px;
+  min-width: 40px;   /* ⭐ tamaño fluido */
+  max-width: 60px;   /* ⭐ tamaño fluido */
+  aspect-ratio: 1;             /* ⭐ proporción perfecta */
+
   border-radius: 12px;
   background: #fff;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
+
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 5px;
 }
 
-.die:hover:not(:disabled) {
-  transform: scale(1.05);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.25);
-}
 
 
 </style>
