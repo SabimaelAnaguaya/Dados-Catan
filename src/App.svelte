@@ -124,6 +124,75 @@
   height: 40px;
 }
 
+/* Fondo oscuro que cubre toda la pantalla */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* por encima del HUD */
+  backdrop-filter: blur(3px);
+}
+
+/* Caja del modal */
+.modal-content {
+  background: #ffffff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+  text-align: center;
+  max-width: 320px;
+  width: 90%;
+  animation: modalIn 0.25s ease-out;
+}
+
+/* Título */
+.modal-content h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Texto */
+.modal-content p {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+/* Botón */
+.modal-content button {
+  background: #4a7a4c;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.modal-content button:hover {
+  background: #3a623c;
+}
+
+/* Animación */
+@keyframes modalIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
 @media (min-width: 1023px) {
 
   .layout {
